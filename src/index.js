@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { KnockoutProvider } from "./react-ko";
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>React App</h1>
+    <KnockoutProvider>
+      <App />
+    </KnockoutProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
